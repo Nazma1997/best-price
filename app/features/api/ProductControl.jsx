@@ -1,5 +1,6 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
-const URL = 'https://bestprice.co.ke/';
+// const URL = 'https://bestprice.co.ke/';
+const URL = 'http://m.homekaaz.com/'
 
 // const URL = 'http://localhost:3002/'
 
