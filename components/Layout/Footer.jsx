@@ -64,11 +64,12 @@ export default function Footer() {
                     </div>
                 </div>
                 <div className="grid md:grid-cols-2 gap-2 border-t border-gray-300 items-center py-2 text-xs font-normal">
-                    <div className="flex flex-wrap gap-2"><p>Copyright © 2012-2022 Price in Kenya. All rights reserved.</p></div>
-                    <nav className="flex flex-wrap gap-y-2 gap-x-3 lg:gap-x-5">
-                        <Link href="/user/cart" className="hover:underline">Shopping cart</Link > <Link href="/user/liked" className="hover:underline">Likes</Link > <Link href="/user/viewed" className="hover:underline">Recently viewed</Link >
+                    {/* <div className="flex flex-wrap gap-2"><p>Copyright © 2012-2022 Price in Kenya. All rights reserved.</p></div> */}
+                    <div className="flex flex-wrap gap-2"><p>Copyright © 2023 All rights reserved by Nazma</p></div>
+                    {/* <nav className="flex flex-wrap gap-y-2 gap-x-3 lg:gap-x-5">
+                        <Link href="/page/cart" className="hover:underline">Shopping cart</Link > <Link href="/user/liked" className="hover:underline">Likes</Link > <Link href="/user/viewed" className="hover:underline">Recently viewed</Link >
                         <Link href="/compares" className="hover:underline">Latest comparisons</Link > <Link href="/price-list" className="hover:underline">Price list</Link >
-                    </nav>
+                    </nav> */}
                 </div>
             </div>
         </footer>

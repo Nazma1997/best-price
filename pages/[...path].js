@@ -48,10 +48,10 @@ export default function Content() {
                 <main className="px-2 text-gray-800 max-w-screen-xl mx-auto min-h-screen ">
                     <header className="flex flex-wrap gap-2 justify-between items-center my-5 mb-1">
                         <div>
-                            <h1 className="text-2xl font-medium leading-tight max-w-full">{output} </h1>
+                            <h1 className="text-2xl font-medium leading-tight max-w-full">{output.toUpperCase()} </h1>
 
                         </div>
-                        <div className="flex flex-wrap items-center gap-x-3 gap-y-2">
+                        {/* <div className="flex flex-wrap items-center gap-x-3 gap-y-2">
                             <div>
                                 <select className="block w-full max-w-sm pl-3 pr-10 py-2 transition duration-100 ease-in-out border rounded-md shadow-sm focus:ring-2 focus:ring-primary-100 focus:outline-none disabled:opacity-50 disabled:cursor-not-allowed text-base md:text-sm focus:border focus:border-primary-100 border-gray-300 placeholder-gray-400 focus:border-primary-100"
                                     onChange={(e) => setBrand(e.target.value)}
@@ -59,10 +59,10 @@ export default function Content() {
 
                                     {
                                         allBrands?.map(i =>
-                                            // <Link href={`/brands/${i?.path}`} >
+                                           
                                             <option value={i?.path}>{i?.title}</option>
 
-                                            //  </Link>
+                                           
                                         )
                                     }
 
@@ -70,7 +70,7 @@ export default function Content() {
 
                                 </select>
                             </div>
-                        </div>
+                        </div> */}
                     </header>
                     <section>
                         <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2 md:gap-2.5 bg-white border rounded-md py-5">
@@ -84,39 +84,13 @@ export default function Content() {
                         </ul>
                     </section>
 
-                    <div className="flex flex-col items-center justify-center gap-5">
-                        <div className="flex gap-3 md:gap-x-8">
-                            <div className="w-20">
-                                <select
-                                    onChange={(e) => setLimit(e.target.value)}
-                                    className="block w-full max-w-sm pl-3  py-2 transition duration-100 ease-in-out border rounded-md shadow-sm focus:ring-2 focus:ring-primary-100 focus:outline-none disabled:opacity-50 disabled:cursor-not-allowed text-base md:text-sm focus:border focus:border-primary-100 border-gray-300 placeholder-gray-400 focus:border-primary-100"
-                                >
-                                    <option >Items</option>
-                                    <option value="5">5</option>
-                                    <option value="20">20</option>
-                                    <option value="100">100</option>
-                                </select>
-                            </div>
-                            <button
-                                className={`${page == 0 ? "hidden" : "block"} block max-w-sm transition duration-100 ease-in-out disabled:opacity-50 disabled:cursor-not-allowed text-sm rounded-md font-medium hover:shadow-md px-7 py-1.5 text-gray-600 bg-white border shadow-none active:bg-gray-100 focus:border-primary-100 focus:ring-offset-0 focus:ring-2 focus:ring-primary-100 focus:outline-none`}
-                                onClick={() => setPage(page - 1)}
-                            >
-                                Prev
-                            </button>
-                            <button
-                                onClick={() => setPage(page + 1)}
-                                className="block max-w-sm transition duration-100 ease-in-out disabled:opacity-50 disabled:cursor-not-allowed text-sm rounded-md font-medium hover:shadow-md px-7 py-1.5 text-gray-600 bg-white border shadow-none active:bg-gray-100 focus:border-primary-100 focus:ring-offset-0 focus:ring-2 focus:ring-primary-100 focus:outline-"
-                            >
-                                next
-                            </button>
-                        </div>
-                    </div>
+                    {/* / */}
 
 
 
 
 
-                    <section className="space-y-1">
+                    {/* <section className="space-y-1">
                         <header>
                             <h2 className="font-medium leading-tight text-base max-w-full">Price range</h2>
                             <p className="text-sm text-gray-700">All Smartphones by price range</p>
@@ -219,7 +193,7 @@ export default function Content() {
                                 </Link>
                             </li>
                         </ol>
-                    </section>
+                    </section> */}
 
                 </main>
             </div>

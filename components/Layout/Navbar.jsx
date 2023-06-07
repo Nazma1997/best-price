@@ -87,7 +87,7 @@ export default function Navbar() {
 
                                     </div>
                                 </div>
-                                <Link href="/pages/users/cart" title="Shopping cart" className="rounded-md font-medium py-2 px-4 text-sm hover:bg-warm-gray-500 hover:text-gray-700">Cart </Link >
+                                <Link href="/page/cart" title="Shopping cart" className="rounded-md font-medium py-2 px-4 text-sm hover:bg-warm-gray-500 hover:text-gray-700">Cart </Link >
 
                                 <div className="inline-flex flex-col">
                                     <button aria-haspopup="true" aria-label="User profile menu" className="rounded-md font-medium py-2 px-4 text-sm hover:bg-warm-gray-500 hover:text-gray-700 flex items-center">

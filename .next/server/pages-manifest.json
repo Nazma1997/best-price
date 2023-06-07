@@ -3,6 +3,7 @@
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
   "/[...path]": "pages/[...path].js",
-  "/api/v1/product": "pages/api/v1/product.js",
-  "/": "pages/index.js"
+  "/product/[id]": "pages/product/[id].js",
+  "/": "pages/index.js",
+  "/api/v1/product": "pages/api/v1/product.js"
 }
