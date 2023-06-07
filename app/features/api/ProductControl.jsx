@@ -1,6 +1,7 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
 
 const URL = 'http://localhost:3002/'
+// const URL = `https://best-price-two.vercel.app/`
 
 export const ProductControl = createApi({
     reducerPath: "Product",

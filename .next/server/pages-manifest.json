@@ -2,8 +2,10 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
+  "/api/v1/product": "pages/api/v1/product.js",
   "/[...path]": "pages/[...path].js",
-  "/product/[id]": "pages/product/[id].js",
   "/": "pages/index.js",
-  "/api/v1/product": "pages/api/v1/product.js"
+  "/api/v1/product/brands": "pages/api/v1/product/brands.js",
+  "/product/[id]": "pages/product/[id].js",
+  "/brands/[...brands]": "pages/brands/[...brands].js"
 }
