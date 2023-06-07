@@ -2,14 +2,14 @@ import Head from "next/head"
 import Link from "next/link"
 import { useRouter } from "next/router"
 import { useState } from "react"
-import { useProductAllQuery, useProductGetQuery } from "../app/features/api/ProductControl"
+import { useBrandQuery, useBrandsProductMutation, useProductAllQuery, useProductGetQuery } from "../app/features/api/ProductControl"
 import Featured from "../components/Pages/Product/Featured"
 
 export default function Content() {
     const [brand, setBrand] = useState()
     const [limit, setLimit] = useState(10)
     const [page, setPage] = useState(0)
-    
+
     const router = useRouter()
     const path = router.query.path
     const pathName = path?.join('/')
@@ -22,15 +22,18 @@ export default function Content() {
         page: page
     }
     const { data } = useProductGetQuery(filterInfo)
+    const { data: allBrands } = useBrandQuery();
+
+
     const currentUrl = router.asPath;
     const output = currentUrl.substring(1);
-    // console.log('Current URL:', output);
-    
-  const filteredProducts =   allProducts?.filter(item1 => item1?.subCategory === output)
+
+
+    const filteredProducts = allProducts?.filter(item1 => item1?.subCategory === output)
 
 
 
-//   console.log('filtered', filteredProducts)
+
 
     return (
         <>
@@ -46,35 +49,25 @@ export default function Content() {
                     <header className="flex flex-wrap gap-2 justify-between items-center my-5 mb-1">
                         <div>
                             <h1 className="text-2xl font-medium leading-tight max-w-full">{output} </h1>
-                           
+
                         </div>
                         <div className="flex flex-wrap items-center gap-x-3 gap-y-2">
                             <div>
                                 <select className="block w-full max-w-sm pl-3 pr-10 py-2 transition duration-100 ease-in-out border rounded-md shadow-sm focus:ring-2 focus:ring-primary-100 focus:outline-none disabled:opacity-50 disabled:cursor-not-allowed text-base md:text-sm focus:border focus:border-primary-100 border-gray-300 placeholder-gray-400 focus:border-primary-100"
                                     onChange={(e) => setBrand(e.target.value)}
                                 >
-                                    <option value='' selected >Brand</option>
-                                    <option value="vivo">vivo</option>
-                                    <option value="dell">Dell</option>
-                                    <option value="samsung">Samsung</option>
-                                    <option value="xiaomi">Xiaomi</option>
-                                    <option value="huawei">Huawei</option>
-                                    <option value="onePlus">OnePlus</option>
-                                    <option value="lG">LG</option>
-                                    <option value="tecno">Tecno</option>
-                                    <option value="infinix">Infinix</option>
-                                    <option value="oppo">Oppo</option>
-                                    <option value="nokia">Nokia</option>
-                                    <option value="vivo">Vivo</option>
-                                    <option value="realme">Realme</option>
-                                    <option value="google">Google</option>
-                                    <option value="lava">Lava</option>
-                                    <option value="itel">Itel</option>
-                                    <option value="lenovo">Lenovo</option>
-                                    <option value="energizer">Energizer</option>
-                                    <option value="hTC">HTC</option>
-                                    <option value="nothing">Nothing</option>
-                                    <option value="motorola">Motorola</option>
+
+                                    {
+                                        allBrands?.map(i =>
+                                            // <Link href={`/brands/${i?.path}`} >
+                                            <option value={i?.path}>{i?.title}</option>
+
+                                            //  </Link>
+                                        )
+                                    }
+
+
+
                                 </select>
                             </div>
                         </div>
@@ -84,7 +77,7 @@ export default function Content() {
                             {
                                 filteredProducts?.map(data => {
                                     return (
-                                        <Featured key={data?._id} img={data?.img} title={data.name} quantity={data?.quantity} price={data?.price} model={data?.model} id={data?._id}/>
+                                        <Featured key={data?._id} img={data?.img} title={data.name} quantity={data?.quantity} price={data?.price} model={data?.model} id={data?._id} />
                                     )
                                 })
                             }

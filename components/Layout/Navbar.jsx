@@ -87,7 +87,8 @@ export default function Navbar() {
 
                                     </div>
                                 </div>
-                                <Link href="/user/cart" title="Shopping cart" className="rounded-md font-medium py-2 px-4 text-sm hover:bg-warm-gray-500 hover:text-gray-700">Cart </Link >
+                                <Link href="/pages/users/cart" title="Shopping cart" className="rounded-md font-medium py-2 px-4 text-sm hover:bg-warm-gray-500 hover:text-gray-700">Cart </Link >
+
                                 <div className="inline-flex flex-col">
                                     <button aria-haspopup="true" aria-label="User profile menu" className="rounded-md font-medium py-2 px-4 text-sm hover:bg-warm-gray-500 hover:text-gray-700 flex items-center">
                                         <p className="line-clamp-1">Account</p>
@@ -112,15 +113,7 @@ export default function Navbar() {
             {/* ================ search data ============= */}
             {searchTerm && <div className="w-[384px] h-[500px] bg-white shadow-md overflow-y-scroll overflow-x-hidden absolute top-[41px] left-[24.7%] rounded z-50 p-2">
 
-                {/* {
-                    SearchData?.map(data => <div key={data?._id} className="flex justify-start items-center gap-3 cursor-pointer mb-2">
-                        <img src={data?.img} className="rounded-full" width={40} height={40} alt="Image" />
-                        <Link href={`/product/${data?.model}`} onClick={() => search_modal()}>{data?.name} </Link>
-
-                    </div>)
-
-                    
-                } */}
+               
                 {searchTerm === ''
 
                     ? displayedItems?.map(item =>

@@ -5,6 +5,7 @@ import Featured from "../../components/Pages/Product/Featured";
 
 export default function Brand() {
   const [GetBrandProduct, { data }] = useBrandProductMutation()
+
   const router = useRouter()
   const path = router.query.brand;
   useEffect(() => {
