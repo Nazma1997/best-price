@@ -21,8 +21,8 @@ export default function Login() {
     const handleSubmit = (e) => {
       e.preventDefault();
       
-      const predefinedEmail = 'nazma@gmail.com';
-      const predefinedPassword = '12345';
+      const predefinedEmail = 'boss@gmail.com';
+      const predefinedPassword = 'l123k456@#';
     
       if (email === predefinedEmail && password === predefinedPassword) {
        

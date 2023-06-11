@@ -15,5 +15,12 @@ self.__RSC_MANIFEST={
       "name": "default",
       "chunks": []
     }
+  },
+  "D:\\best-price\\node_modules\\quill\\dist\\quill.snow.css": {
+    "default": {
+      "id": "./node_modules/quill/dist/quill.snow.css",
+      "name": "default",
+      "chunks": []
+    }
   }
 }

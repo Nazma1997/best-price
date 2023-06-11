@@ -7,7 +7,7 @@ import Link from 'next/link'
 export default function Footer() {
     return (
         <footer
-            className="mt-5 py-10 pb-24 text-white  text-opacity-75 text-sm bg-no-repeat bg-cover bg-left-bottom footer_bg_image"
+            className="footer_bg_image py-10 pb-24 md:pb-3 text-white text-opacity-75 text-sm py-5 bg-no-repeat bg-cover bg-left-bottom"
         >
             <div className="max-w-screen-xl mx-auto space-y-8 px-2">
                 <div className="grid md:grid-cols-2 gap-2 gap-y-8">

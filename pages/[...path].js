@@ -38,14 +38,14 @@ export default function Content() {
     return (
         <>
             <Head>
-                <title>Product</title>
-                <meta name="description" content="Product" />
+                <title>{output.toUpperCase()} Best price in kenya</title>
+                <meta name="description" content="{output.toUpperCase()} Best price in kenya" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
             <div className="bg-[#F1F1F1]">
-                <main className="px-2 text-gray-800 max-w-screen-xl mx-auto min-h-screen ">
+                <main className="md:px-8 px-2 text-gray-800 max-w-screen-xl mx-auto min-h-screen ">
                     <header className="flex flex-wrap gap-2 justify-between items-center my-5 mb-1">
                         <div>
                             <h1 className="text-2xl font-medium leading-tight max-w-full">{output.toUpperCase()} </h1>

@@ -1,1 +1,1 @@
-self.__REACT_LOADABLE_MANIFEST={}
+self.__REACT_LOADABLE_MANIFEST={"..\\components\\Shared\\Editor.js -> jodit-react":{"id":"..\\components\\Shared\\Editor.js -> jodit-react","files":["static/chunks/node_modules_jodit-react_build_jodit-react_js.js"]}}

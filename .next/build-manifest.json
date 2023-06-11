@@ -39,10 +39,11 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/brands/[...brands]": [
+    "/admin": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/brands/[...brands].js"
+      "static/css/pages/admin.css",
+      "static/chunks/pages/admin.js"
     ],
     "/product/[id]": [
       "static/chunks/webpack.js",

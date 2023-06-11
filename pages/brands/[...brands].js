@@ -20,7 +20,6 @@ export default function Brands() {
         <main className="px-2 text-gray-800 max-w-screen-xl mx-auto min-h-screen">
             <div>
                 <h1 className="text-2xl font-medium leading-tight max-w-full my-4">{output} </h1>
-
             </div>
             <section>
                 <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2 md:gap-2.5 bg-white border rounded-md py-5">

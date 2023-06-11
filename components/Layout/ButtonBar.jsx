@@ -1,7 +1,7 @@
 import Link from 'next/link'
 export default function ButtonBar() {
     return (
-        <main>
+        <main className='block md:hidden'>
             <nav className="fixed max-h-20 bg-white bottom-0 inset-x-0 bg-cool-gray-500 text-xs text-gray-600 shadow-inner">
                 <div className="max-w-screen-xl mx-auto lg:px-2 gap-x-4 flex justify-between overflow-x-scroll">
                     <Link href="/" title="Price in Kenya" className="w-full block py-2 px-3 lg:pb-5 text-center hover:bg-gray-200 transition duration-300 nuxt-link-active">

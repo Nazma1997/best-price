@@ -8,10 +8,12 @@
 
 }
 .hera2 tr:nth-child(even), .hera ul li:nth-child(even) {background: #e6ecee;}
-            .hera2 td,.hera2 th,.hera ul li {padding: 5px;}
-            .hera2 h3 {color: #ab4725;}
-            tbody,table {width: 100%;}
-            table {
-                width: 100%;
-                max-width: 100%;
-            }
+.hera2 td,.hera2 th,.hera ul li {padding: 5px;font-weight: normal;line-height: 30px;}
+.hera2 h3 {color: #ab4725;}
+tbody,table {width: 100%;}
+table {
+    width: 100%;
+    max-width: 100%;
+}
+p{font-weight: normal;line-height: 30px;}
+.hera2 ul {list-style: disc;margin-left: 30px;}

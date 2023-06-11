@@ -31,12 +31,12 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Home</title>
-        <meta name="description" content="Home" />
+        <title>Best peice in kenya: Electronics Store in Nairobi - Countrywide Delivery - Price in Kenya</title>
+        <meta name="description" content="Online shopping site Kenya - Shop Phones TVs Electronics Laptops Home & Kitchen appliances online on Zuricart and More from top brands like Samsung. Enjoy Next Day Delivery Return within 7 Days. Best Price Guaranteed." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.jpg" />
       </Head>
-      <main role="main" className="px-2 text-gray-800 max-w-screen-xl mx-auto min-h-screen">
+      <main role="main" className="md:px-8 px-2 text-gray-800 max-w-screen-xl mx-auto min-h-screen">
         <article>
 
           {/* PopularCategories  */}

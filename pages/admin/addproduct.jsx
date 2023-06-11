@@ -319,7 +319,7 @@ const renderModal = (id) => {
               categoryAdd &&
               <main>
                 <section class="flex items-center bg-gray-500  font-poppins dark:bg-gray-800 ">
-                  <div class="justify-center flex-1 max-w-2xl px-4  mx-auto ">
+                  <div class="justify-center flex-1 px-4  mx-auto ">
                     <h2 class="pb-2 text-xl font-bold text-center text-gray-800 md:text-3xl dark:text-gray-300">
                       Product From
                     </h2>
